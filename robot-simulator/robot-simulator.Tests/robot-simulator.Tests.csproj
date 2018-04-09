@@ -5,8 +5,15 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
+    <PackageReference Include="Moq" Version="4.8.2" />
     <PackageReference Include="xunit" Version="2.3.1" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.3.1" />
     <DotNetCliToolReference Include="dotnet-xunit" Version="2.3.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\robot-simulator\robot-simulator.csproj">
+      <Project>{60298FC2-83AB-4276-A73E-3C693B346E56}</Project>
+      <Name>robot-simulator</Name>
+    </ProjectReference>
   </ItemGroup>
 </Project>
