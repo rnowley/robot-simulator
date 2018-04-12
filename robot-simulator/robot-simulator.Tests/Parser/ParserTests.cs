@@ -47,7 +47,7 @@ namespace robot_simulator.Tests.Parser
         {
             var input = string.Empty;
             
-            Assert.Throws<Exception>(() => Scanner.ParseString(input));
+            Assert.Throws<ParserException>(() => Scanner.ParseString(input));
         }
     }
 }
